@@ -57,7 +57,7 @@ pipeline{
           }   
           stage("Discord Notification"){
             steps{
-                 discordSend description: 'Uma nova versão da aplicação esta disponível no servidor de produção', footer: 'Mais informações disponíveis na tag do projeto no GitHub', image: '', link: 'https://loja.iniciala.com.br', result: 'SUCESS', thumbnail: '', title: 'Deploy', webhookURL: 'https://discordapp.com/api/webhooks/740306052939120641/r-3QgeqZinqquGeg6_wTlnG_aVFvdibUGtzyYTG7U8t8n0BYuULuGb6Jys-cILAyonKy'
+                 discordSend description: 'Uma nova versão da aplicação esta disponível no servidor de produção', footer: 'Mais informações disponíveis na tag do projeto no GitHub', image: '', link: 'https://loja.iniciala.com.br', result: 'SUCESS', thumbnail: '', title: 'Deploy', webhookURL: 'your webhook url'
             }
          }   
      }
