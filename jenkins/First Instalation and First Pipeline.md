@@ -14,7 +14,7 @@
 11 - Generete new ssh keys to configure new credentials for Git in the Jenkins credentials configuration
 
 10 - The jenkins pipeline file must be at the root of your repository. Inside this file you will create your script as in the example below
-
+```
 def PROJECT_VERSION = "UNINTIALIZED"
 pipeline{
     agent any
@@ -55,3 +55,4 @@ pipeline{
          }   
      }
 }
+```
