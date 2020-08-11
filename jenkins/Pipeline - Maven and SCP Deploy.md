@@ -1,19 +1,26 @@
-1 - Install Jenkins
-2 - Install maven plugin
-3 - Install GitHub or GitLab plugin
-4 - Instal SSH Agent Plugin
+#### Configure Deploy Pipeline with Maven and SSH Copy
 
-5 - In jenkins server you need to install a maven and configure mvn path look like the example on line 45 or configure the MAVEN_HOME in jenkins server
+- Install Jenkins
 
-6 - This example, deploy the new version in the tomcat server.
+- Install maven plugin
 
-7 - To configure sending the file on the server, you need to configure ssh keys on the jenkins server and copy public key to tomcat server, then, you don't need to specified the user and password to tomcat server
+- Install GitHub or GitLab plugin
 
-8 - Configure a new Pipeline project with git and specified jenkins file name on the project repository
+- Instal SSH Agent Plugin
 
-11 - Generete new ssh keys to configure new credentials for Git in the Jenkins credentials configuration
+- In jenkins server you need to install a maven and configure mvn path look like the example on line 45 or configure the MAVEN_HOME in jenkins server
 
-10 - The jenkins pipeline file must be at the root of your repository. Inside this file you will create your script as in the example below
+- This example, deploy the new version in the tomcat server.
+
+- To configure sending the file on the server, you need to configure ssh keys on the jenkins server and copy public key to tomcat server, then, you don't need to specified the user and password to tomcat server
+
+- Configure a new Pipeline project with git and specified jenkins file name on the project repository
+
+- Generete new ssh keys to configure new credentials for Git in the Jenkins credentials configuration
+
+- The jenkins pipeline file must be at the root of your repository. Inside this file you will create your script as in the example below:
+
+
 ```
 def PROJECT_VERSION = "UNINTIALIZED"
 pipeline{
