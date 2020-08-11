@@ -1,4 +1,4 @@
-#### Configure Deploy Pipeline with Maven and SSH Copy
+#### Deploy - Pipeline, Maven and SSH Copy
 
 - Install Jenkins
 
